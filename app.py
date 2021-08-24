@@ -1,12 +1,12 @@
 #!python3
 
-from flask import Flask, request
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
-def welcome():
-    return 'This is my first app! Heheh!'
+def root_page():
+    return render_template("index.html")
 
 
 @app.route('/method',methods=['GET', 'POST']) 
