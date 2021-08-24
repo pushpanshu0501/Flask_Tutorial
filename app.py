@@ -4,9 +4,12 @@ from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def root_page():
-    return render_template("index.html")
+    name = ''
+    if request.method=='POST' and 'username' in request.form:
+        name = request.form.get('username')
+    return render_template("index.html", name=name)
 
 
 @app.route('/method',methods=['GET', 'POST']) 
