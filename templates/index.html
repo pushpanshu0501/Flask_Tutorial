@@ -23,9 +23,9 @@
     </div>
 
     <div>
-        (% if name %)
-            <p> Welcome to my site ((name))!</p>
-        (% endif %)
+        {% if name %}
+            <p> Welcome to my site {{name}}!</p>
+        {% endif %}
     </div>
 
 </body>
