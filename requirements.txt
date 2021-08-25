@@ -6,7 +6,7 @@ aiormq==3.3.1
 alabaster==0.7.12
 alembic==1.4.3
 altgraph==0.17
-anaconda-client==1.7.2
+anaconda-client
 anaconda-navigator==1.10.0
 anaconda-project==0.8.3
 appdirs==1.4.4
